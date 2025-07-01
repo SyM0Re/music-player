@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualizer</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="flex">
+      <nav class="flex">
+        <div class="left">
+          <div>
+            <img src="svgs/logo.svg" alt="logo" />
+          </div>
+        </div>
+        <div class="mid">
+          <div class="wrap1">
+            <img src="svgs/home.svg" alt="Home" />
+          </div>
+          <div class="text flex">
+            <div class="wrap1 wrap2">
+              <img src="svgs/search.svg" alt="" />
+            </div>
+            <input
+              type="text"
+              placeholder="What do you want to play"
+              id="Folder"
+            />
+            <div class="wrap1 brows">
+              <img src="svgs/brows.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="text-button sign">Sign Up</div>
+          <div class="text-button log">Log in</div>
+        </div>
+      </nav>
+    </header>
+    <main class="flex">
+      <div class="left-main">
+        <div class="library-head flex">
+          <span>Songs Library</span>
+          <div class="create flex">
+            <img src="svgs/creat.svg" alt="" />
+          </div>
+          <div class="leftslide create flex glow-button">
+            <img src="svgs/slideright.svg" alt="" />
+          </div>
+        </div>
+        <div class="library-main">
+          <ul></ul>
+        </div>
+      </div>
+      <div class="right-main">
+        <div class="right-head flex">
+          <div class="rightslide create flex" id="glowDiv">
+            <img src="svgs/slideright.svg" alt="slide Right" />
+          </div>
+          <span> Visulaizer </span>
+          <div class="create flex full-screen">
+            <img src="svgs/fullscreen.svg" alt="full Screen" />
+          </div>
+        </div>
+        <div class="amoled-visualizer">
+          <div class="wave-circles-container" id="waveCirclesContainer"></div>
+          <div class="center-glow"></div>
+          <div class="floating-particles" id="floatingParticles"></div>
+          <div class="ripple-effects" id="rippleEffects"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="flex">
+      <div class="upper flex">
+        <div class="currenttime"></div>
+        <div class="playbar">
+          <div class="circle"></div>
+        </div>
+        <div class="duration"></div>
+      </div>
+      <div class="menu">
+        <div class="songinfo">
+          <marquee></marquee>
+        </div>
+        <div class="navi-btns flex">
+          <div class="previous">
+            <img src="images/next.png" alt="previous" />
+          </div>
+          <div class="play">
+            <img src="images/play.png" alt="play" />
+          </div>
+          <div class="next">
+            <img src="images/next.png" alt="previous" />
+          </div>
+        </div>
+        <div class="controls">
+          <div class="create flex volume">
+            <img src="svgs/volume.svg" alt="" />
+            <input
+              type="range"
+              min="0"
+              max="1"
+              step="0.01"
+              value="1"
+              class="volume-slider"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
