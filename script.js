@@ -224,7 +224,7 @@ let songs = [];
 async function getsongs() {
 
     //Folder Path
-    let folder = "./songs/";
+    let folder = "../songs/";
 
     let res = await fetch(folder);
     let response = await res.text();
