@@ -224,8 +224,9 @@ let songs = [];
 async function getsongs() {
 
     //Folder Path
+    let folder = "";
     try {
-        let folder = "../songs/";
+        folder = "../songs/";
     } catch (error) {
         console.log(error, "folder error");
     }
@@ -254,8 +255,7 @@ async function getsongs() {
 
             //Formating the the songs info
             let ele = as[i].href.split("/songs/")[1].split(".mp3")[0].replaceAll("%20", " ").replaceAll("%", " ");
-            let len = ele.length;
-            ele = ele.slice(0, len - 4);
+            ele = ele.slice(0, -4);
             let Artists = ele.split("-")[0];
             ele = ele.split("-")[1];
 
