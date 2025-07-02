@@ -254,7 +254,6 @@ async function getsongs() {
 
             //Formating the the songs info
             let ele = as[i].href.split("/")[4].split(".mp3")[0].replaceAll("%20", " ").replaceAll("%", " ");
-            ele = ele.slice(0, -4);
             let Artists = ele.split("-")[0];
             ele = ele.split("-")[1];
 
@@ -507,7 +506,6 @@ let fullscreen = document.querySelector(".full-screen");
 //double click on the audio visuailizer
 document.querySelector(".amoled-visualizer").addEventListener("dblclick", () => {
     if (!document.fullscreenElement) {
-        console.log("hello");
         Fullscreen();
     } else {
         document.exitFullscreen();
