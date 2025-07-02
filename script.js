@@ -251,11 +251,9 @@ async function getsongs() {
 
             //Storing the hyperlinks in songs list
             songs.push(as[i].href)
-            console.log(as[i].href);
 
             //Formating the the songs info
-            let ele = as[i].href.split("/")[3].split(".mp3")[0].replaceAll("%20", " ").replaceAll("%", " ");
-            console.log(ele);
+            let ele = as[i].href.split("/")[4].split(".mp3")[0].replaceAll("%20", " ").replaceAll("%", " ");
             ele = ele.slice(0, -4);
             let Artists = ele.split("-")[0];
             ele = ele.split("-")[1];
