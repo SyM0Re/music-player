@@ -254,8 +254,7 @@ async function getsongs() {
 
 
             //Formating the the songs info
-            let ele = as[i].href;
-            console.log(ele);
+            let ele = as[i].href.split(".app/")[1].split(".mp3")[0].replaceAll("%20", " ").replaceAll("%", " ");
             ele = ele.slice(0, -4);
             let Artists = ele.split("-")[0];
             ele = ele.split("-")[1];
